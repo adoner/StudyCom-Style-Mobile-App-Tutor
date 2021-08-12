@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".getQuestion">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/top_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#FFFFFF"
+        app:cardBackgroundColor="@android:color/holo_blue_light">
+
+        <Switch
+            android:id="@+id/swAvailable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:background="@android:color/holo_blue_light"
+            android:paddingLeft="5dp"
+            android:text="Soru İçin Uygunum"
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="70dp"
+            android:text="Ders Adı"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="70dp"
+            android:text="Çözülen Soru"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tw_dersadi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="100dp"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tw_soruaded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="100dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_cardview"
+        android:layout_marginTop="5dp"
+        android:text="GELEN SORU(LAR)"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_above="@+id/bottom_cardview"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="5dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/twSwiping"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="70dp"
+                android:paddingRight="10dp"
+                android:text="Lütfen soru istemek için belirli aralıklarla sayfayı aşağıya kaydırarak yenileyin yada SORU İSTE butonunu tıklayın."
+                android:textAlignment="center"
+                android:textColor="#B8B5B5"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvButtonclosed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingTop="70dp"
+                android:paddingRight="10dp"
+                android:text='Soru alabilmek için "Soru için uygunum" butonu açık konumda olmalıdır. Lütfen kaydırarak açınız.'
+                android:textAlignment="center"
+                android:textColor="#B9B3B3"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/assignedList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/bottom_cardview"
+                android:layout_below="@+id/top_cardview"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="0dp" />
+        </FrameLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bottom_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        app:cardBackgroundColor="@android:color/holo_blue_light">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soru iste düğmesine bastığınızda otomatik gelen sorular dışında yukarıdaki derse ait soru havuzundan varsa o an uygun olan sorular gelecektir."
+            android:textAlignment="center"
+            android:textColor="#FC3C3B3B"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/btn_soruiste"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="100dp"
+            android:text="Soru İste" />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

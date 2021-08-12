@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Sanal Tebeşir</string>
+    <string name="username">Kullanıcıadı (Eposta Adresi)</string>
+    <string name="password">Şifre</string>
+    <string name="sign_in">Giriş</string>
+    <string name="register">Kayıt</string>
+    <string name="full_name">Ad Soyad</string>
+    <string name="phone">Telefon no</string>
+    <string name="confirm_password">Şifreyi Tekrarla</string>
+    <string name="already_having_account">Zaten Hesabınız varmı?</string>
+    <string name="log_in">Giriş</string>
+    <string name="not_having_account">Hesabınız yokmu?</string>
+    <string name="sign_up">Kayıt Ol</string>
+    <string name="profile">"Profil Bilgileri"</string>
+    <string name="myAccount">"Hesabım"</string>
+    <string name="statistics">"Kullanım İstatistikleri"</string>
+    <string name="mywallet">"Cüzdanım"</string>
+    <string name="kullanim">"Kullanım Sözleşmesi"</string>
+    <string name="gizlilik">"Gizlilik İlkeleri"</string>
+    <string name="archive">"Soru Arşivi"</string>
+    <string name="aboutus">"Hakkında"</string>
+    <string name="getquestion">"Soru İste"</string>
+    <string name="messages">Mesajlar</string>
+    <string name="transactions">Hesap Haraketleri</string>
+    <string name="withdraw">Banka Hesabına Aktarım</string>
+    <string name="support">Destek / İletişim</string>
+    <string name="about">Hakkımızda</string>
+    <string name="faq">Sıkça Sorulan Sorular</string>
+    <string name="nocomment">Yorum yapılmadı.</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+
+</resources>

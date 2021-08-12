@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "619774287508",
+    "firebase_url": "https://sanaltebesirtutor-d5e30.firebaseio.com",
+    "project_id": "sanaltebesirtutor-d5e30",
+    "storage_bucket": "sanaltebesirtutor-d5e30.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619774287508:android:9e34fd63f0179892481e81",
+        "android_client_info": {
+          "package_name": "com.sanaltebesir.sanaltebesirtutor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619774287508-gfffigc9256mdp0nncm0dar1r72fedtk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKDmecNfT2knECp7xy9p9SQSsYtvnAqAI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619774287508-gfffigc9256mdp0nncm0dar1r72fedtk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
